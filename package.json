@@ -3,9 +3,6 @@
   "version": "2018.5.0",
   "description": "Visualizing our technology choices",
   "license": "MIT",
-  "directories": {
-    "doc": "docs"
-  },
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "eslint": "^5.7.0",
@@ -13,7 +10,7 @@
     "socket.io": "^4.4.1"
   },
   "scripts": {
-    "start": "browser-sync docs -w",
+    "start": "browser-sync -w",
     "lint": "npm run lint:js && npm run lint:html",
     "lint:js": "eslint *.js",
     "lint:html": "htmllint *.html"
